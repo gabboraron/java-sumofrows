@@ -1,5 +1,5 @@
 # java-sumofrows
-file |  java.io.* | java.util.Arrays | java.util.Scanner
+file | Scanner | FileNotFoundException | IOException |  java.io.* | java.util.Arrays | java.util.Scanner
 
 5.2: http://kitlei.web.elte.hu/segedanyagok/felev/2017-2018-osz/java-hun/feladatok.html
 
