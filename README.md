@@ -1,6 +1,14 @@
 # java-sumofrows
 file | Scanner | FileNotFoundException | IOException |  java.io.* | java.util.Arrays | java.util.Scanner
 
+
+## Output to console
+* sumofrows.java
+
+## Output to console & file
+* sumofrowsOutToFile.java
+
+### Feladat:
 5.2: http://kitlei.web.elte.hu/segedanyagok/felev/2017-2018-osz/java-hun/feladatok.html
 
 Soronkénti összegzés
