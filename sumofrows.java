@@ -9,7 +9,8 @@ public class sumofrows{
 			System.err.println("Too mutch command line arguments.");
 		}
 		try {
-			sumWithoutBufferedReader(args[0]);
+			//sumWithoutBufferedReader(args[0]);
+			sumWithBufferedReader(args[0]);
 		} catch (FileNotFoundException e) {
 			System.err.println("The file cannot be opened.");
 		} catch (IOException e) {
@@ -51,6 +52,31 @@ public class sumofrows{
 					System.out.println(s);
 				}
 				System.out.println("***");*/
+			}
+		}
+	}
+	
+	public static void sumWithBufferedReader(String input)
+	throws IOException{
+		File inFile = new File(input);
+		try(BufferedReader br = new BufferedReader(new FileReader(inFile));){
+			String line;
+			for(line = br.readLine(); line!=null; line = br.readLine() ){
+				String line1 = line;
+				line = br.readLine();
+				if(line!=null){
+					String[] res1 = line1.split(",");
+					String[] res2 = line.split(",");
+					int[] tmp = new int[res1.length];
+					for(int i=0; i<res1.length; ++i){
+						tmp[i] = Integer.parseInt(res1[i]) + Integer.parseInt(res2[i]);
+					}
+					System.out.println(Arrays.toString(res1));
+					System.out.println(Arrays.toString(res2));
+					System.out.println("+++++++++");
+					System.out.println(Arrays.toString(tmp));
+					System.out.println(" ");
+				}
 			}
 		}
 	}
